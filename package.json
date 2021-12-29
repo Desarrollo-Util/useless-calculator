@@ -1,6 +1,6 @@
 {
   "name": "useless-calculator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Una calculadora sencilla que no pretendemos que use nadie",
   "keywords": [
     "useless"
@@ -9,6 +9,11 @@
   "author": "Desarrollo Útil",
   "main": "dist-node/index.js",
   "browser": "dist-browser/index.js",
+  "homepage": "https://github.com/Desarrollo-Util/useless-calculator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Desarrollo-Util/useless-calculator"
+  },
   "scripts": {
     "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
     "build-node": "tsc src/index.ts --outDir dist-node",
