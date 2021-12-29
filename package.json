@@ -1,0 +1,20 @@
+{
+  "name": "useless-calculator",
+  "version": "1.0.1",
+  "description": "Una calculadora sencilla que no pretendemos que use nadie",
+  "keywords": [
+    "useless"
+  ],
+  "license": "MIT",
+  "author": "Desarrollo Útil",
+  "main": "dist-node/index.js",
+  "browser": "dist-browser/index.js",
+  "scripts": {
+    "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
+    "build-node": "tsc src/index.ts --outDir dist-node",
+    "build": "npm run build-browser & npm run build-node"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
+}
